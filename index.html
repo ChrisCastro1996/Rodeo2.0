@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rodeo - Próximamente</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS Files comes here -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link href="css/animate.css" rel="stylesheet" media="screen">
+    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+    <link href="css/nivo-lightbox.css" rel="stylesheet" media="screen">
+    <link href="css/nivo_lightbox_themes/default/default.css" rel="stylesheet" media="screen">
+    <link href="css/colors/green.css" rel="stylesheet" media="screen">
+    <link href="css/responsive.css" rel="stylesheet" media="screen">
+    
+    <!-- Google fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic" rel="stylesheet" type="text/css">
+    
+    <!-- Modernizer and IE specyfic files -->  
+    <script src="js/modernizr.custom.js"></script>
+      
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+  </head>
+  
+
+  <body>
+
+    <!--###############################-->
+    <!--PRELOADER #####################-->
+    <!--###############################-->
+    
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--###############################-->
+    <!--HOME ##########################-->
+    <!--###############################-->
+
+    <section id="home">
+    <div class="container">
+        <div class="row">
+            <div id="homescreen" class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+              <br> <br>        
+              <br> <br>
+                 <img src="images/cabalo2.png" class="img-responsive" id="home_image" alt="img">
+            </div> <div class="clearfix"></div>
+        </div>
+    </div>
+    </section>
+
+    <!-- JavaScript plugins comes here -->
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/retina.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/nivo-lightbox.min.js"></script>
+    <script type="text/javascript">
+        $('document').ready(function(){
+                $('#subscribe-form').ajaxForm( {
+                target: '#preview',
+                success: function() { 
+                      $('#subscribe-form').slideUp('slow');
+                      $('#preview').css({"opacity":"1"});
+                    }
+                });
+            });
+    </script>
+    <script>
+        var url ='images/icons.svg';
+        var c=new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
+        document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild)
+    </script>
+
+    
+
+    
+  </body>
+</html>
